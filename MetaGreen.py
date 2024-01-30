@@ -128,11 +128,9 @@ while True:
     H = x.strftime("%H")
 
     if H!=hr:
-        experiment = Experiment(api_key=api_key, project_name=project_name, workspace=workspace)
-
     # Capture a screenshot
         path = f"/home/kali/Pictures/pic{i}.png"
-        screenshot = pag.screenshot()#,region=(0,0, 300, 400))
+        screenshot = pag.screenshot()
         screenshot.save(path)
         
         # Log the screenshot to Comet.ml
