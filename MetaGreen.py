@@ -50,9 +50,8 @@ password = getpass("Password: ")
 
 experiment = Experiment(api_key=api_key, project_name=project_name, workspace=workspace)
 
-# Your condition for taking a screenshot
-
 s = 0
+
 try:
     ser = serial.Serial("/dev/ttyACM0") #COM can be found in Arduino IDE
     sleep(2)
